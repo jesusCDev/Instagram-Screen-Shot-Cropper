@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Insta-Screen Crop</string>
+    <string name="title_activity_main">Insta-Screen Crop</string>
+    <string name="title_activity_presenter_crop_images_activity">Select Image To Edit</string>
+
+
+    <!-- PROJECT ACTIVITY STRINGS -->
+    <string name="permission_deny_message">App is not usable until permissions are granted.</string>
+    <!-- Main -->
+    <string name="main_image_selector_title">Select Pictures</string>
+    <string name="main_permission_error_message">Accept Permissions</string>
+    <!-- Load Crop Images -->
+    <string name="loadCropImages_saveFolderName">InstaScreenCrop</string>
+    <string name="loadCropImages_title_savingImages">Saving Cropped Images</string>
+    <string name="loadCropImages_title_getCropParameters">Finding And Creating Image Parameters</string>
+
+    <string name="loadCropImages_notificationTitle_Done">Done</string>
+    <string name="loadCropImages_notificationTitle_SavingImages">Saving Images</string>
+    <string name="loadCropImages_notificationTitle_GettingParameters">Finding Parameters</string>
+    <!-- Presenter Crop Images -->
+    <string name="presenterCropImages_title">Select Image To Edit Crop</string>
+
+    <!-- OPEN SOURCE PROJECTS MESSAGES -->
+    <string name="openSource_title">Open Source Projects Used</string>
+    <string name="openSource_summary">This project would not have been possible without the help of the open source
+        community. Thank You.
+    </string>
+    <string name="openSource_credit_title_picasso">Picasso</string>
+    <string name="openSource_credit_summary_picasso">This simple yet powerful open source project was used to create a
+        list view of the images and their cropped parameters. To remove lag and optimize memory when presenting the
+        images. You can find and contribute to the project at https://github.com/square/picasso
+    </string>
+    <string name="openSource_credit_title_android_image_cropper">Android Image Cropper</string>
+    <string name="openSource_credit_summary_android_image_cropper">This incredible open source project allowed me to
+        create a crop activity in order to edit the crop parameters. You can find and contribute to the project at
+        https://github.com/ArthurHub/Android-Image-Cropper
+    </string>
+    <string name="openSource_credit_title_android_permissions">Android Permissions</string>
+    <string name="openSource_credit_summary_android_permissions">This stable and incredible library allows a quick and
+        easy way to work with android permissions. Find more about the project at
+        https://github.com/nabinbhandari/Android-Permissions
+    </string>
+    <string name="title_activity_ad_crop_image_presentation">AdCropImagePresentation</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_world">Hello world!</string>
+    <!-- -
+        This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+</resources>
