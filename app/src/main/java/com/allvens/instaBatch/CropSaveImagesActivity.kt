@@ -116,6 +116,16 @@ class CropSaveImagesActivity: AppCompatActivity(){
     }
 
     private fun goTo_MainPage(){
+
+        /************************* Handles Completion Showing *************************/
+        val prefs: SharedPreferences = getSharedPreferences(Constants.PREFS_NAMES.toString(), Context.MODE_PRIVATE)
+        val prefEditor:SharedPreferences.Editor = prefs.edit()
+
+        prefEditor.putBoolean(Constants.Boolean_CROPPED_IMAGES.toString(), true)
+        prefEditor.commit()
+
+
+        /************************* Sends Person Back *************************/
         notification_manager.cancelNotification()
         val intent = Intent(this, MainActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP

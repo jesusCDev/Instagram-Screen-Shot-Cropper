@@ -20,17 +20,6 @@
             android:id="@+id/floatingActionButton" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:onClick="save_CropImages" app:layout_constraintHorizontal_bias="0.498"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/adViewCropPresentation"/>
-    <com.google.android.gms.ads.AdView
-            xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adViewCropPresentation"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
-            android:layout_marginStart="8dp" ads:layout_constraintStart_toStartOf="parent"
-            android:layout_marginEnd="8dp" ads:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="8dp"
-            ads:layout_constraintBottom_toBottomOf="parent"/>
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/rvAnimals"/>
+
 </android.support.constraint.ConstraintLayout>

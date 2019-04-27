@@ -8,9 +8,11 @@ import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.View
 import com.allvens.instaBatch.assets.Constants
 import android.widget.CompoundButton
+import android.widget.LinearLayout
 import android.widget.Switch
 import android.widget.Toast
 import com.nabinbhandari.android.permissions.PermissionHandler
@@ -44,12 +46,19 @@ class MainActivity : AppCompatActivity() {
         sAddPadding.setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener { buttonView, isChecked ->
             change_SwitchParameterValues(Constants.ADD_PADDING_TO_TOP_BOTTOM.toString(), isChecked, prefEditor)
         })
+
+        /********** Show Cropping Complete **********/
+        if(prefs.getBoolean(Constants.Boolean_CROPPED_IMAGES.toString(), false)){
+            show_CroppingComploeteMessage()
+            prefEditor.putBoolean(Constants.Boolean_CROPPED_IMAGES.toString(), false)
+            prefEditor.commit()
+        }
     }
 
-//    private fun show_CroppingComploeteMessage(){
-//        val hiddenLayout: LinearLayout = findViewById(R.id.ll_home_imagesHaveBeenCropped)
-//        hiddenLayout.visibility = View.VISIBLE
-//    }
+    private fun show_CroppingComploeteMessage(){
+        val hiddenLayout: LinearLayout = findViewById(R.id.ll_home_imagesHaveBeenCropped)
+        hiddenLayout.visibility = View.VISIBLE
+    }
 
     /****************************************
     **** SWITCH METHODS
