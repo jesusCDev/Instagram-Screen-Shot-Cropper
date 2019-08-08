@@ -10,8 +10,8 @@ android {
         applicationId "com.allvens.insta_batch"
         minSdkVersion 21
         targetSdkVersion 27
-        versionCode 1
-        versionName "1.1"
+        versionCode 3
+        versionName "2.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

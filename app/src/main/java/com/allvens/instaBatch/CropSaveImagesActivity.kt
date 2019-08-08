@@ -95,8 +95,7 @@ class CropSaveImagesActivity: AppCompatActivity(){
      ****************************************/
 
     private fun saveImageWithCroppedParameter(deleteImageAfterSaving: Boolean){
-        val editor: File_Editor =
-            File_Editor(this)
+        val editor: File_Editor = File_Editor(this)
 
         for((index: Int, cropImageAndParameters: ImageParameters_Parcelable) in imagesAndParameters.withIndex()){
             editor.save_ImageToDevice(cropImageAndParameters)
